@@ -16,7 +16,7 @@ def index():
    elif request.method =='POST':
         data = request.form.to_dict()
         db.insert(data)
-        return render_template("pranimimesukses.html")
+        return render_template("test.html")
         #return json_util.dumps(data)
    else:
         return 'bad request'
